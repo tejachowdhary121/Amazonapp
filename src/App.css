@@ -1,38 +1,76 @@
 .App {
   text-align: center;
+} */
+body{
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-custom ul li{
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* when someone hover on images in mini tv component */
+.mini-tv img:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+/* miniTv image css */
+.mini-tv img {
+ border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* when someone hover on images in fresh1 component */
+.fresh1 img:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+/* fresh1 image css */
+.fresh1 img {
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* when someone hover on images in electronics1 component */
+.electronics1 img:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+/* electronics1 image css */
+.electronics1 img {
+  border-radius: 20px;
+ }
+
+/* CarouselPage css*/
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video-container {
+  position: relative;
 }
+.video {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.video.playing {
+  visibility: visible;
+}
+
+/* styles.css */
+.rounded-video {
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+/* styles.css */
+.movie-title {
+  font-size: 30px;
+  color: #333;
+  margin-top: -30px;
+  margin-bottom : 40px;
+  text-align: center;
+}
+
+
